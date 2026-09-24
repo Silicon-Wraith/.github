@@ -1,7 +1,7 @@
 <p align="center">
   <img src="../assets/Silicon_Wraith-Logo.png"
        alt="Silicon Wraith"
-       width="700">
+       width="500">
 </p>
 
 <h3 align="center">
@@ -20,7 +20,6 @@ communicating, adapting, and doing useful work largely out of sight.
 
 ### Nebulon
 
-### Nebulon
 
 **A censorship-resistant, self-organizing peer-to-peer network built around
 per-connection polymorphic protocols.**
