@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/Silicon_Wraith-Logo.png"
+  <img src="../assets/Silicon_Wraith-Logo.png"
        alt="Silicon Wraith"
        width="700">
 </p>
