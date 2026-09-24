@@ -20,26 +20,64 @@ communicating, adapting, and doing useful work largely out of sight.
 
 ### Nebulon
 
-A peer-to-peer distributed systems platform exploring decentralized discovery,
-communication, coordination, and resilient application architecture.
+### Nebulon
 
-**Status:** Preparing for open-source release.
+**A censorship-resistant, self-organizing peer-to-peer network built around
+per-connection polymorphic protocols.**
 
-<!-- Add additional projects here as they become public. -->
+#### The problem
 
-## What you'll find here
+Decentralized networks often become identifiable and controllable through the
+very mechanisms that allow them to function. Protocol signatures can be
+fingerprinted. Bootstrap infrastructure can become a target. Distributed hash
+tables and discovery mechanisms expose recognizable behavior. Even when the
+content is encrypted, the network itself may still be identifiable.
 
-The projects in Silicon Wraith tend to explore problems involving:
+Once a protocol can be reliably identified, blocking it becomes a tractable
+problem.
 
-- Distributed and peer-to-peer systems
-- Autonomous agents and multi-agent systems
-- AI-assisted software engineering
-- Developer and infrastructure tooling
-- Architecture experiments that are useful enough to become real software
+#### A different approach
 
-The emphasis is on engineering rather than demos: explicit architecture,
-understandable design decisions, testing, documentation, and software intended
-to survive contact with the real world.
+Nebulon starts with a different premise: **what if there were no single
+protocol to identify?**
+
+Rather than attempting to disguise a fixed wire protocol, Nebulon allows each
+peer connection to cryptographically derive its own protocol from material
+known only to those peers. The resulting protocol space is enormous — roughly
+4.2 × 10²² possible combinations — making network-wide protocol
+fingerprinting fundamentally different from identifying a conventional
+decentralized network.
+
+The objective isn't simply to make classification difficult. It's to make
+classification at network scale economically impractical.
+
+#### More than protocol polymorphism
+
+Nebulon is designed as a complete decentralized network rather than a transport
+experiment. Its architecture combines:
+
+- **Per-connection polymorphic protocols** derived from shared cryptographic
+  material
+- **Vivaldi network coordinates** for latency-aware decentralized routing
+- **Self-organizing neighborhoods** partitioned using Voronoi-style clustering
+- **Epidemic gossip** for decentralized resource discovery and dissemination
+- **Peer-elected supernodes** providing logarithmic shortcuts across the network
+- **Decentralized naming** without dependence on DNS or a central registrar
+
+The result is a network designed to organize itself, route efficiently, discover
+resources, and scale without requiring a central authority or a globally
+recognizable protocol.
+
+#### Engineering the network
+
+Nebulon is being developed in **C# / .NET 10** alongside a parallel validation
+environment. A discrete-event network simulator is being built to exercise
+multi-node behavior, while Python-based algorithmic experiments validate
+routing and topology algorithms at scales ranging from hundreds to tens of
+thousands of simulated nodes.
+
+The intent is to test the assumptions behind the architecture rather than
+simply describe them.
 
 ## Why open source?
 
